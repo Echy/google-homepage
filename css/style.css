@@ -1,6 +1,7 @@
 :root {
     --light-grey: hsla(360, 0%, 50%, 1);
     --dark-grey: hsla(360, 0%, 25%, 1);
+    --input-grey: hsla(195, 10%, 95%, 1);
 }
 
 html, body {
@@ -26,7 +27,7 @@ nav {
         display: none;
     }
 }
-ul {
+ul, ol {
     display: flex;
 }
 ul > li {
@@ -59,18 +60,19 @@ ul > li > a:hover {
     color: darkslateblue;
 }
 
+/* Main stuff */
 #search_bar_div, #search_buttons_div, #localization_p {
-    padding: 10px;
+    padding: 7px;
 }
 
 #search_box {
-    padding-top: 35%;
+    padding-top: 25%;
 }
 
 #search_input {
     border: 1px solid var(--light-grey);
     border-radius: 5em;
-    width: 350px;
+    width: 450px;
     height: 35px;
 }
 
@@ -80,9 +82,59 @@ input[type=text]:focus {
 
 .search_btn {
     margin: 0px 10px 0px 10px;
-    height: 25px;
-    width: 150px;
+    height: 35px;
+    width: 125px;
     border-radius: 5px;
-    border: 1px solid hsla(195, 10%, 95%, 1);
-    background-color: hsla(195, 10%, 95%, 1);
+    border: 1px solid var(--input-grey);
+    background-color: var(--input-grey);
+}
+
+.search_btn:hover {
+    border: 1px solid var(--light-grey);
+}
+
+/* Footer stuff */
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: var(--input-grey);
+
+}
+footer > div {
+    border: 1px solid var(--light-grey);
+    width: 100%;
+    height: 40px;
+}
+#lang {
+    text-align: justify;
+}
+#lang > div {
+    margin-top: 12px;
+    margin-left: 45px;
+}
+
+ol > li {
+    list-style: none;
+    padding-right: 15px;
+}
+ol > li > a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+#footer_links {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+/* TODO: split them properly*/
+#left-links {
+
+}
+#right-links {
+    
 }
