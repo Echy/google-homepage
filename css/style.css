@@ -1,0 +1,88 @@
+:root {
+    --light-grey: hsla(360, 0%, 50%, 1);
+    --dark-grey: hsla(360, 0%, 25%, 1);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+#main_container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+/*top-right menu*/
+nav {
+    position: absolute;
+    right: 1%;
+    top: 0%;
+}
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+}
+ul {
+    display: flex;
+}
+ul > li {
+    padding: 3px;
+    flex-flow: row;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-self: center;
+    align-items: center;
+}
+ul > li > a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+ul > li > a:hover {
+    text-decoration: underline;
+    color: var(--light-grey);
+}
+#make_it_round {
+    background-color: ivory;
+    min-width: 30px;
+    min-height: 30px;
+    border-color: var(--light-grey);
+    border-radius: 50%;
+    border-style: solid;
+}
+#localization_text {
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+#search_bar_div, #search_buttons_div, #localization_p {
+    padding: 10px;
+}
+
+#search_box {
+    padding-top: 35%;
+}
+
+#search_input {
+    border: 1px solid var(--light-grey);
+    border-radius: 5em;
+    width: 350px;
+    height: 35px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.search_btn {
+    margin: 0px 10px 0px 10px;
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid hsla(195, 10%, 95%, 1);
+    background-color: hsla(195, 10%, 95%, 1);
+}
