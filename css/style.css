@@ -114,6 +114,7 @@ footer > div {
 #lang > div {
     margin-top: 12px;
     margin-left: 45px;
+    color: var(--light-grey);
 }
 
 ol > li {
@@ -129,12 +130,5 @@ ol > li > a {
     width: 100%;
     display: flex;
     flex-flow: row;
-}
-
-/* TODO: split them properly*/
-#left-links {
-
-}
-#right-links {
-    
+    justify-content: space-between;
 }
